@@ -11,12 +11,6 @@
   Ethical Security Testing Platform
 </p>
 
----
-
-> ⚠️ **For Education Purposes Only.** Phish Hunt is built to test and train people
-> against phishing, never to attack real victims without written permission.
-
----
 
 ## 1. What is Phish Hunt? (Working Mechanism explained in simple words)
 
@@ -25,9 +19,6 @@ like this to send fake " phishing " pages to their own employees. When an employ
 types their username/password into the fake page, the tool captures that moment,
 shows who fell for it, and then the company trains those people to be more careful.
 
-Phish Hunt is proudly inspired by **GoPhish** (thank you, GoPhish — open-source
-phishing simulation made this tool possible) and pushes the idea further with a
-**full visual editor, real website cloning, and multi-page phishing flows**.
 
 **How it works, step by step:**
 
@@ -249,3 +240,7 @@ Thank you, GoPhish, for making this possible. 🙏
 
 **Reminder:** use only for education, training, and authorised testing with
 written permission from the tested organisation.
+
+---
+
+<h3 align="center"><b>☕ Buy me a coffee → <a href="https://buymeacoffee.com/thorthehacker">buymeacoffee.com/thorthehacker</a></b></h3>
